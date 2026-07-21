@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Seb & Alex Wedding Invitation</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="flash"></div>
+
+    <main id="app">
+      <!-- CLOSED ENVELOPE -->
+
+      <section id="closed-screen">
+        <img src="./assets/closed-envelope.png" alt="Closed Envelope" />
+      </section>
+
+      <!-- INVITATION -->
+
+      <section id="invitation-screen">
+        <img
+          class="open-envelope"
+          src="./assets/open-envelope.png"
+          alt="Open Envelope"
+        />
+
+        <div class="card-container">
+          <div class="card-shimmer"></div>
+
+          <video class="invitation-video" autoplay muted loop playsinline>
+            <source src="./assets/invitation.mp4" type="video/mp4" />
+          </video>
+
+          <img
+            class="overlay"
+            src="./assets/overlay.png"
+            alt="Invitation Overlay"
+          />
+
+          <!-- Venue Hotspot -->
+          <a
+            class="venue-hotspot"
+            href="https://www.google.com/maps/place/Angeles+City+Hall+of+Justice/@15.1653435,120.605059,17z/data=!3m1!4b1!4m6!3m5!1s0x3396edf7ef90beef:0xfd550e0636c5bb22!8m2!3d15.1653435!4d120.6076339!16s%2Fg%2F12hqhqc3j?entry=ttu&g_ep=EgoyMDI2MDcxNS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open Wedding Venue in Google Maps"
+          >
+          </a>
+
+          <!-- Calendar Hotspot -->
+          <a
+            class="calendar-hotspot"
+            href="./assets/Seb-and-Alex-Wedding.ics"
+            download
+            aria-label="Add Wedding to Calendar"
+          >
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <audio id="bgMusic" loop preload="auto">
+      <source src="./assets/music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
